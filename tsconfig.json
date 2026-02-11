@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",             // <- обязательно NodeNext
-    "moduleResolution": "NodeNext",   // <- чтобы import pkg from 'express' работал
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "resolveJsonModule": true
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
   },
-  "include": ["server.ts"]
+  "include": ["server.ts"],
+  "exclude": ["node_modules", "dist"]
 }
