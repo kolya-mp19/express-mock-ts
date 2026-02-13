@@ -1,3 +1,3 @@
-npm run start
+npm run dev:watch
 
 PORT: 3100
