@@ -1,6 +1,7 @@
 import expressPkg from 'express';
 import type { Request, Response, NextFunction } from 'express';
 import { nanoid } from 'nanoid';
+import { ASSETS } from './mock/asset.ts';
 
 const app = expressPkg();
 const PORT = 3100;
@@ -36,6 +37,10 @@ app.post('/api/token', (req: Request, res: Response<any>) => {
     expires_in: 120,
     timestamp: new Date().toISOString(),
   });
+});
+
+app.get('/api/assets', (req: Request, res: Response<any>) => {
+  res.json(ASSETS);
 });
 
 app.listen(PORT, () => {
