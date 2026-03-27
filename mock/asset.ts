@@ -68,8 +68,35 @@ export const ASSETS = {
       IssuedAmount: 505,
       ForQualifiedOnly: false,
       IssuerKey: '6b5b59a42217460c8db526106bd0500f',
+      Issuer: {
+        ClientKey: '6ca9aea07ce646679a1f261556b07c9f',
+        Uid: '8a0de425-1736-4087-948a-e21678ab0532',
+        Name: 'Belson LLC',
+      },
       IsOrderInitAvailable: false,
       IsUnavailableSecondaryTrade: false,
+      Documents: [
+        [
+          {
+            Uid: '9c214228-e6be-4383-9a89-077b317ed562',
+            FileName: 'Description.pdf',
+            Size: 11667,
+            Kind: 'IssueDecision',
+          },
+          {
+            Uid: '5fc4606e-7af2-4a29-bf1f-b1ee8fe028a4',
+            FileName: 'Offer.pdf',
+            Size: 310960,
+            Kind: 'OfferProspectus',
+          },
+          {
+            Uid: '319f8d45-588e-4bc6-92a6-0639b3244b58',
+            FileName: 'Init.pdf',
+            Size: 305394,
+            Kind: 'InitProspectus',
+          },
+        ],
+      ],
     },
     {
       Uid: '1556f22e-47de-4208-8a5f-003a62d660f5',
